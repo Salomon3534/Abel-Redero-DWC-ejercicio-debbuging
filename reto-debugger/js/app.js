@@ -36,12 +36,12 @@ form.addEventListener("submit", (event) => {
     const subtotal = personas * dias * PRECIO_BASE;
 
     let descuento = 0;
-    if (personas > 4) {
+    if (personas >= 4) {
         descuento = subtotal * 0.10;
     }
 
     let suplemento = 0;
-    if (dias > 3) {
+    if (dias >= 3) {
         suplemento = subtotal * 0.05;
     }
 
